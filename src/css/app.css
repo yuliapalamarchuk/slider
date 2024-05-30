@@ -1,0 +1,23 @@
+/* app global css */
+/* Убираем эффекты hover, focus и active для всех элементов */
+.q-carousel__navigation--left > .q-carousel__navigation-inner,
+.q-carousel__navigation--right > .q-carousel__navigation-inner {
+  gap: 20px;
+}
+
+/* Remove Hover Styles */
+.q-btn {
+  &:hover {
+    background-color: #1976d2;
+    color: inherit;
+  }
+}
+
+.custom-carousel {
+  max-width: 1157px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+}
