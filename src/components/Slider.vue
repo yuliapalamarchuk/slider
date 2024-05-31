@@ -12,34 +12,14 @@
       <!-- Custom navigation controls -->
       <template v-slot:control>
         <div class="custom-controls">
-          <q-btn
-            icon="arrow_back_ios"
-            dense
-            flat
-            class="control-next"
-            @click="goToSlide('style')"
-          />
-          <q-btn
-            icon="arrow_forward_ios"
-            dense
-            flat
-            class="control-next"
-            @click="goToSlide('tv')"
-          />
-          <q-btn
-            icon="arrow_forward_ios"
-            dense
-            flat
-            class="control-next"
-            @click="goToSlide('layers')"
-          />
-          <q-btn
-            icon="arrow_forward_ios"
-            dense
-            flat
-            class="control-next"
-            @click="goToSlide('map')"
-          />
+          <q-btn dense flat class="control-next" />
+          <img src="../assets/arr_right.png" @click="goToSlide('style')" />
+          <q-btn dense flat class="control-next" />
+          <img src="../assets/arr_right.png" @click="goToSlide('tv')" />
+          <q-btn dense flat class="control-next" />
+          <img src="../assets/arr_right.png" @click="goToSlide('layers')" />
+          <q-btn dense flat class="control-next" />
+          <img src="../assets/arr_right.png" @click="goToSlide('map')" />
         </div>
       </template>
 
@@ -137,6 +117,10 @@ export default {
   overflow: visible;
 }
 
+.custom-controls img {
+  cursor: pointer;
+}
+
 .custom-carousel {
   overflow: visible;
 }
@@ -167,16 +151,12 @@ export default {
 
 .custom-controls {
   position: absolute;
-  left: 3rem;
-  top: 50%;
+  left: 4rem;
+  top: 44%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 100px;
-}
-.control-next {
-  background-color: #73aee6;
-  padding: 25px;
+  gap: 65px;
 }
 
 .custom-slide {
@@ -196,6 +176,7 @@ export default {
 .custom-slide-astronomy {
   background-image: url("../assets/astronomy.png");
 }
+
 .custom-slide-class {
   background-image: url("../assets/class.png");
 }
