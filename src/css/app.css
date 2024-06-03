@@ -21,3 +21,8 @@
 body {
   background-color: black;
 }
+
+.q-btn .q-icon,
+.q-btn .q-spinner {
+  font-size: 40px;
+}
